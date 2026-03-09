@@ -1,0 +1,111 @@
+body{
+background-color:#f5e8e6;
+margin:0;
+}
+
+/* NAVBAR */
+
+nav{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#f5e8e6;
+padding:0 2rem;
+min-height:70px;
+transition: background-color 0.3s ease;
+z-index:1000;
+}
+
+nav.scrolled{
+background-color:#c8918d;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.iconname{
+display:flex;
+align-items:center;
+gap:1rem;
+}
+
+.gato{
+width:7rem;
+}
+
+h1{
+font-family:"Archivo Black", sans-serif;
+font-size:2rem;
+color:#900208;
+margin:0;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:2rem;
+margin:0;
+align-items:center;
+}
+
+.menu a{
+font-family:"Archivo Black", sans-serif;
+font-size:1.2rem;
+color:#900208;
+text-decoration:none;
+transition:0.3s;
+}
+
+.menu a:hover{
+opacity:0.7;
+}
+
+.iconcat{
+height:30px;
+}
+
+hr{
+border:none;
+height:4px;
+background-color:#c8918d;
+margin:0;
+}
+
+/*dps do nav - header*/
+
+.conteudo{
+color:#900208;
+display:flex;
+font-size:1.3rem;
+gap:1.7rem;
+font-family:"Noto Serif", serif;
+}
+
+main{
+margin-top:30px;
+}
+
+.carmain{
+background-color:#c8918d;
+box-shadow:0 10px 20px #c8918d;
+}
+
+.carrossel{
+margin:0 auto;
+overflow:hidden;
+width:1200px;
+height:675px;
+}
+
+.container{
+display:flex;
+transition:transform 0.5s ease-in-out;
+}
+
+.propaganda{
+width:1200px;
+height:675px;
+object-fit:cover;
+flex-shrink:0;
+display:block;
+}
