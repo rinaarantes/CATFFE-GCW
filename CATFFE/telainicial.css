@@ -76,8 +76,8 @@ margin:0;
 .conteudo{
 color:#900208;
 display:flex;
-font-size:1.3rem;
-gap:1.7rem;
+font-size:130%;
+gap:1.3%;
 font-family:"Noto Serif", serif;
 }
 
@@ -109,3 +109,112 @@ object-fit:cover;
 flex-shrink:0;
 display:block;
 }
+
+
+
+/* MAIN CARDAPIO */
+#cardapio{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+margin-top:40px;
+}
+
+
+
+h2{
+font-family:"Archivo Black", sans-serif;
+font-size:1.5rem;
+color:#E4CECC;
+margin:0;
+text-align:center;
+}
+
+a{
+text-decoration:none;
+}
+
+.bebi{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+background-color:#c8918d;
+height:200px;
+width:200px;
+padding:15px;
+border-radius:30px;
+box-shadow:0 10px 20px #e7a7aa
+}
+
+.comi{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+background-color:#c8918d;
+height:200px;
+width:200px;
+padding:15px;
+border-radius:30px;
+box-shadow:0 8px 20px #e7a7aa
+}
+
+.imgcomi {
+    position: relative; 
+    bottom: 45px;
+    left: 65px;
+    width: 40rem;      
+}
+
+.imgbebidas {
+ height: 8rem;
+}
+
+/*SOBRE*/
+
+
+.h1sobre{
+     margin-top: 160px;
+    text-align: center;
+     font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+}
+
+.sobre {
+ 
+    padding: 10%;
+    background-color: #63280e;
+}
+
+.chocolate {
+    position:static;
+    top: 0%;
+}
+
+
+
+/*footer*/
+
+footer {
+    background-color: #c8918d;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    right: 40px;
+    bottom: 20px;
+    height: 2rem;
+}
+
+h3 {
+
+    color: #E4CECC;
+    
+}
+
