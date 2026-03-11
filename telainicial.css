@@ -1,0 +1,254 @@
+body{
+background-color:#f5e8e6;
+margin:0;
+}
+
+/* NAVBAR */
+
+nav{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#f5e8e6;
+padding:0 2rem;
+min-height:70px;
+transition: background-color 0.3s ease;
+z-index:1000;
+flex-wrap:wrap;
+}
+
+nav.scrolled{
+background-color:#e0bab8;
+box-shadow:0 4px 10px rgba(241, 6, 6, 0.1);
+}
+
+.iconname{
+display:flex;
+align-items:center;
+gap:1rem;
+}
+
+.gato{
+width:7rem;
+}
+
+h1{
+font-family:"Archivo Black", sans-serif;
+font-size:2rem;
+color:#9d3f37;
+margin:0;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:clamp(1rem,3vw,2rem);
+margin:0;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.menu a{
+font-family:"Archivo Black", sans-serif;
+font-size:1.2rem;
+color:#9d3f37;
+text-decoration:none;
+transition:0.3s;
+}
+
+.menu a:hover{
+opacity:0.7;
+}
+
+.iconcat{
+height:30px;
+}
+
+hr{
+border:none;
+height:4px;
+background-color:#c8918d;
+margin:0;
+}
+
+/*dps do nav - header*/
+
+.conteudo{
+color:#9d3f37;
+display:flex;
+font-size:clamp(1rem,1.3vw,1.3rem);
+gap:1rem;
+font-family:"Noto Serif", serif;
+}
+
+main{
+margin-top:30px;
+}
+
+.carmain{
+background-color:#c8918d;
+box-shadow:0 10px 20px #c8918d;
+}
+
+.carrossel{
+margin:0 auto;
+overflow:hidden;
+width:90%;
+max-width:1200px;
+aspect-ratio:16/9;
+}
+
+.container{
+display:flex;
+transition:transform 0.5s ease-in-out;
+}
+
+.propaganda{
+width:100%;
+height:100%;
+object-fit:cover;
+flex-shrink:0;
+display:block;
+}
+
+/* MAIN CARDAPIO */
+
+#cardapio{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+h2{
+font-family:"Archivo Black", sans-serif;
+font-size:1.5rem;
+color:#E4CECC;
+margin:0;
+text-align:center;
+}
+
+a{
+text-decoration:none;
+}
+
+.bebi{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+background-color:#c8918d;
+width:clamp(160px,20vw,200px);
+height:auto;
+padding:15px;
+border-radius:30px;
+box-shadow:0 10px 20px #e7a7aa
+}
+
+.comi{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+background-color:#c8918d;
+width:clamp(160px,20vw,200px);
+height:auto;
+padding:15px;
+border-radius:30px;
+box-shadow:0 8px 20px #e7a7aa
+}
+
+.imgcomi{
+width:11rem;
+max-width:100%;
+}
+
+.imgbebidas{
+height:8rem;
+max-width:100%;
+}
+
+/*SOBRE*/
+
+.h1sobre{
+margin-top:160px;
+text-align:center;
+font-family:"Noto Serif", serif;
+font-size:clamp(2rem,4vw,3rem);
+}
+
+
+
+
+
+.funcho{
+width:100%;
+height:clamp(200px,30vw,400px);
+object-fit:cover;
+}
+
+.chocolate{
+position:relative;
+top:-40px;
+right:60px;
+margin-bottom:160px;
+}
+
+.cauda {
+  position:relative;
+  height:clamp(200px,30vw,400px);
+  top: -190px;
+  left: 50%;
+}  
+
+
+/*footer*/
+
+footer{
+background-color:#c8918d;
+flex-direction:column;
+display:flex;
+align-items:center;
+}
+
+.logo{
+position:relative;
+right:40px;
+bottom:20px;
+height:2rem;
+}
+
+h3{
+color:#E4CECC;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:768px){
+
+h1{
+font-size:1.5rem;
+}
+
+.menu a{
+font-size:1rem;
+}
+
+#cardapio{
+gap:30px;
+}
+
+.h1sobre{
+margin-top:100px;
+}
+
+.chocolate{
+right:0;
+top:-10px;
+}
+
+}
