@@ -1,5 +1,5 @@
 body{
-background-color:#f5e8e6;
+background-color:#f3ffeb;
 margin:0;
 }
 
@@ -11,7 +11,7 @@ top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background-color:#f5e8e6;
+background-color:#f3ffeb;
 padding:0 2rem;
 min-height:70px;
 transition: background-color 0.3s ease;
@@ -31,7 +31,7 @@ gap:1rem;
 }
 
 .gato{
-width:7rem;
+width:5rem;
 }
 
 h1{
@@ -88,7 +88,7 @@ margin-top:30px;
 }
 
 .carmain{
-background-color:#c8918d;
+background-color:#fbe4c1;
 box-shadow:0 10px 20px #c8918d;
 }
 
@@ -175,7 +175,7 @@ max-width:100%;
 /*SOBRE*/
 
 .h1sobre{
-margin-top:160px;
+margin-top:130px;
 text-align:center;
 font-family:"Noto Serif", serif;
 font-size:clamp(2rem,4vw,3rem);
@@ -195,6 +195,15 @@ font-size:clamp(2rem,4vw,3rem);
   left: 65%;
   max-width:400px;
 }
+
+.perfil {
+  position: relative;
+  bottom:40%;
+  min-height: 50px;
+}
+
+
+
 
 /*
 .perfil {
