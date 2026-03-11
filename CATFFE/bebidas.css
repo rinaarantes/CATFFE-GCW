@@ -1,0 +1,141 @@
+
+
+body{
+ background-color:#f5e8e6;
+margin:0;
+}  
+ 
+
+
+
+nav{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#d6968c;
+padding:0 2rem;
+min-height:70px;
+transition: background-color 0.3s ease;
+z-index:1000;
+flex-wrap:wrap;
+}
+
+nav.scrolled{
+background-color:#e0bab8;
+box-shadow:0 4px 10px rgba(241, 6, 6, 0.1);
+}
+
+.iconname{
+display:flex;
+align-items:center;
+gap:1rem;
+}
+
+.gato{
+width:7rem;
+}
+
+h1{
+font-family:"Archivo Black", sans-serif;
+font-size:2rem;
+color:#9d3f37;
+margin:0;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:clamp(1rem,3vw,2rem);
+margin:0;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.menu a{
+font-family:"Archivo Black", sans-serif;
+font-size:1.5rem;
+color:#9d3f37;
+text-decoration:none;
+transition:0.3s;
+}
+
+.menu a:hover{
+opacity:0.7;
+}
+
+.iconcat{
+height:30px;
+}
+
+/**MAIN - conteudo principal**/
+
+/* AREA FRAPPUCCINO */
+
+
+
+h2 {
+    position: relative;
+   right: 50px;
+color: #9d3f37;
+font-family:"Bodoni Moda", serif;
+margin-top: 220px;
+margin-bottom: 30px;
+font-size: 5rem;
+text-align: right;
+}
+
+
+.frappu{
+background-color:#b86e64;
+padding:50px 20px;
+text-align:right;
+color:white;
+}
+
+.frappu-texto{
+    position: relative;
+      left: 1600px;
+
+max-width:300px;
+
+ 
+}
+
+.frappu h2{
+font-family:"Bodoni Moda", serif;
+font-size:3rem;
+color:#9d3f37;
+margin-bottom:15px;
+}
+
+.frappu p{
+font-family:"Open Sans", sans-serif;
+font-size:1rem;
+line-height:1.6;
+}
+
+/* BLOQUINHOS */
+
+.ingredientes{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:10px;
+flex-wrap:wrap;
+}
+
+.card{
+background-color:#c47a70;
+width:120px;
+height:70px;
+border-radius:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.card img{
+height:40px;
+}
