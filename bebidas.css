@@ -97,23 +97,9 @@ color:white;
 .frappu-texto{
     position: relative;
       left: 1600px;
-
 max-width:300px;
 
  
-}
-
-.frappu h2{
-font-family:"Bodoni Moda", serif;
-font-size:3rem;
-color:#9d3f37;
-margin-bottom:15px;
-}
-
-.frappu p{
-font-family:"Open Sans", sans-serif;
-font-size:1rem;
-line-height:1.6;
 }
 
 /* BLOQUINHOS */

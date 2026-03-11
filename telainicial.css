@@ -181,11 +181,29 @@ font-family:"Noto Serif", serif;
 font-size:clamp(2rem,4vw,3rem);
 }
 
+#sobre {
+  background-color:#703d24 ;
+  padding: 8%;
+  margin-bottom: 60px;
+}
+
+.sobrecont {
+  color: #E4CECC;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 20px;
+  left: 65%;
+  max-width:400px;
+}
+
+/*
+.perfil {
+  margin: 0 auto;
+  padding: 0;
+} */
 
 
-
-
-.funcho{
+/*.funcho{
 width:100%;
 height:clamp(200px,30vw,400px);
 object-fit:cover;
@@ -203,7 +221,7 @@ margin-bottom:160px;
   height:clamp(200px,30vw,400px);
   top: -190px;
   left: 50%;
-}  
+}  */
 
 
 /*footer*/
