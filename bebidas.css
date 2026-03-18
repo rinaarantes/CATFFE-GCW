@@ -1,127 +1,145 @@
+body {
+  background-color: #fffceb;
+  margin: 0;
+}
 
+/* NAV */
 
-body{
- background-color:#fffceb;
-margin:0;
-}  
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6968c;
+  padding: 15px 30px;
+}
+
+.iconname {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gato {
+  width: 70px;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: #9d3f37;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+  color: #9d3f37;
+  font-size: 1.2rem;
+}
  
-
-
-
-nav{
-position:sticky;
-top:0;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background-color:#d6968c;
-padding:0 2rem;
-min-height:70px;
-transition: background-color 0.3s ease;
-z-index:1000;
-flex-wrap:wrap;
-}
-
-nav.scrolled{
-background-color:#e0bab8;
-box-shadow:0 4px 10px rgba(241, 6, 6, 0.1);
-}
-
-.iconname{
-display:flex;
-align-items:center;
-gap:1rem;
-}
-
-.gato{
-width:7rem;
-}
-
-h1{
-font-family:"Archivo Black", sans-serif;
-font-size:2rem;
-color:#9d3f37;
-margin:0;
-}
-
-.menu{
-display:flex;
-list-style:none;
-gap:clamp(1rem,3vw,2rem);
-margin:0;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.menu a{
-font-family:"Archivo Black", sans-serif;
-font-size:1.5rem;
-color:#9d3f37;
-text-decoration:none;
-transition:0.3s;
-}
-
-.menu a:hover{
-opacity:0.7;
-}
-
-.iconcat{
-height:30px;
-}
-
-/**MAIN - conteudo principal**/
-
-/* AREA FRAPPUCCINO */
-
-
 
 h2 {
-    position: relative;
-   right: 50px;
-color: #9d3f37;
-font-family:"Bodoni Moda", serif;
-margin-top: 220px;
-margin-bottom: 30px;
-font-size: 5rem;
-text-align: right;
+  color: #9d3f37;
+  font-family: "Bodoni Moda", serif;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-align: center;
 }
 
 
-.frappu{
-background-color:#b86e64;
-padding:50px 20px;
-text-align:right;
-color:white;
+
+.frappu {
+  background-color: #b86e64;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  position: relative;
+  overflow: visible;
 }
 
-.frappu-texto{
-    position: relative;
-      left: 1600px;
-max-width:300px;
+
+
+.img-bebida {
+  width: clamp(190px, 25vw, 300px);
+  position: relative;
+  top: -70px;
+  filter: drop-shadow(0px 15px 20px rgba(0,0,0,0.35));
+  transition: transform 0.3s;
+}
+
+.img-bebida:hover {
+  transform: translateY(-10px);
+}
+
+
+.frappu-texto {
+  color: white;
+  max-width: 450px;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 1.6;
+}
+
+/* INGREDIENTES */
+
+.ingredientes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0 80px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #c47a70;
+  width: 120px;
+  height: 70px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  height: 50px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .frappu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-bebida {
+    top: -50px;
+  }
+
+  .frappu-texto {
+    text-align: center;
+  }
+}
 
  
-}
 
-/* BLOQUINHOS */
+@media (min-width: 1600px) {
+  .frappu {
+    max-width: 1400px;
+    padding: 80px;
+  }
 
-.ingredientes{
-display:flex;
-justify-content:center;
-gap:30px;
-margin-top:10px;
-flex-wrap:wrap;
-}
-
-.card{
-background-color:#c47a70;
-width:120px;
-height:70px;
-border-radius:30px;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.card img{
-height:40px;
+  .frappu-texto {
+    font-size: 1.6rem;
+  }
 }

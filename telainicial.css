@@ -181,25 +181,30 @@ font-family:"Noto Serif", serif;
 font-size:clamp(2rem,4vw,3rem);
 }
 
+/* SOBRE */
+
 #sobre {
-  background-color:#703d24 ;
+  background-color: #703d24;
   padding: 8%;
   margin-bottom: 60px;
+
+  display: flex;              /* ativa lado a lado */
+  align-items: center;        /* alinha verticalmente */
+  justify-content: center;    /* centraliza */
+  gap: 40px;                  /* espaço entre imagem e texto */
+  flex-wrap: wrap;            /* responsivo */
+}
+
+.perfil {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
 }
 
 .sobrecont {
   color: #E4CECC;
   font-size: 1.5rem;
-  position: relative;
-  bottom: 20px;
-  left: 65%;
-  max-width:400px;
-}
-
-.perfil {
-  position: relative;
-  bottom:40%;
-  min-height: 50px;
+  max-width: 500px;
 }
 
 
